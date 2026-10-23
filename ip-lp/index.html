@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insting Pengusaha | Kamu Bukan Gak Bakat Bisnis, Kamu Cuma Belum Pernah Latihan</title>
+<meta name="description" content="Simulator keputusan bisnis: jadi bos di 40 kasus usaha kecil, ambil keputusan, lihat akibatnya, tanpa rugi sepeser. Dibuka dari browser, tanpa install.">
+<meta property="og:title" content="Insting Pengusaha | Kamu Bukan Gak Bakat Bisnis, Kamu Cuma Belum Pernah Latihan">
+<meta property="og:description" content="40 kasus bercabang, Dompet Simulasi Rp10 juta, Hitung Cepat, Bedah Peluang, dan Profil Insting. Gagal 40 kali pun rugi uang asli Rp0.">
+<meta name="theme-color" content="#1E5B47">
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pri:#163F32;
+  --pri-mid:#1E5B47;
+  --pri-soft:#E3EFE9;
+  --pri-deep:#0F2E24;
+  --madu:#E8A33D;
+  --madu-soft:#FBEFD9;
+  --madu-text:#8A5A12;
+  --bara:#C8463D;
+  --bara-soft:#F8E3E0;
+  --bg:#FAF7F0;
+  --pasir:#F1ECE1;
+  --card:#FFFFFF;
+  --line:#E4DDD0;
+  --line-soft:#EDE7DA;
+  --ink:#1F2A24;
+  --muted:#5E6A62;
+  --muted-light:#7D877F;
+  --sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --radius:14px;
+  --radius-lg:20px;
+  --sinyal:#E8A33D;
+  --sinyal-deep:#B07A22;
+  --maxw:1120px;
+  --maxw-text:680px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-0.02em;color:var(--pri);font-family:var(--sans);}
+h1{font-size:clamp(31px,5.8vw,50px);font-weight:800;letter-spacing:-0.03em;line-height:1.1;}
+h2{font-size:clamp(25px,4.2vw,36px);font-weight:800;}
+h3{font-size:clamp(20px,2.6vw,24px);font-weight:700;}
+h4{font-size:17px;font-weight:700;}
+p{margin:0 0 1rem;}
+p:last-child{margin-bottom:0;}
+strong{font-weight:700;color:var(--pri);}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.narrow{max-width:var(--maxw-text);margin-left:auto;margin-right:auto;}
+section{padding:56px 0;}
+@media(min-width:768px){section{padding:76px 0;}}
+.sec-alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sec-deep{background:var(--pri-deep);color:#fff;}
+.sec-deep h2,.sec-deep h3{color:#fff;}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--pri-mid);margin:0 0 10px;}
+.eyebrow-bara{color:var(--bara);}
+.eyebrow-madu{color:var(--madu-text);}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);}
+.sec-deep .lead{color:#D3E6DC;}
+.center{text-align:center;}
+
+/* header */
+.site-head{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0;position:relative;z-index:5;}
+.logo{display:inline-block;font-family:var(--sans);font-size:20px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);text-decoration:none;line-height:1.2;}
+.logo em{font-style:normal;color:var(--pri-mid);}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--sinyal);color:var(--ink);text-decoration:none;
+  font-weight:800;font-size:17px;letter-spacing:-0.01em;
+  padding:17px 28px;border-radius:12px;border:none;cursor:pointer;
+  box-shadow:0 3px 0 var(--sinyal-deep);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  text-align:center;width:100%;
+}
+@media(min-width:560px){.btn{width:auto;font-size:18px;padding:18px 34px;}}
+.btn:hover{background:#DC9530;transform:translateY(-1px);box-shadow:0 4px 0 var(--sinyal-deep);}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--sinyal-deep);}
+.btn:focus-visible{outline:3px solid var(--pri-mid);outline-offset:3px;}
+.sec-deep .btn{background:var(--sinyal);color:var(--ink);box-shadow:0 3px 0 #081C15;}
+.sec-deep .btn:hover{background:#DC9530;}
+.btn-note{font-size:14.5px;color:var(--muted);margin-top:12px;}
+.sec-deep .btn-note{color:#AFCDBE;}
+.cta-block{margin-top:26px;}
+
+/* hero */
+.hero{background:var(--card);padding:28px 0 44px;border-bottom:1px solid var(--line);}
+.hero-grid{display:block;}
+.hero-img{margin:22px -20px 24px;}
+@media(min-width:900px){
+  .hero{padding:64px 0 72px;}
+  .hero-grid{display:grid;grid-template-columns:1fr 460px;grid-template-areas:"hd img" "rest img";column-gap:56px;align-items:center;}
+  .hero-hd{grid-area:hd;align-self:end;}
+  .hero-rest{grid-area:rest;align-self:start;padding-top:18px;}
+  .hero-img{grid-area:img;margin:0;align-self:center;}
+  .hero-img img{border-radius:var(--radius-lg);}
+}
+.hero-bullets{list-style:none;padding:0;margin:22px 0 0;}
+.hero-bullets li{position:relative;padding-left:30px;margin-bottom:12px;font-size:16.5px;color:var(--ink);}
+.hero-bullets li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--pri-soft);border:2px solid var(--pri-mid);}
+.hero-bullets b{color:var(--pri);}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:14.5px;color:var(--muted);font-weight:600;}
+.hero-facts span{white-space:nowrap;}
+
+/* cards */
+.grid{display:grid;gap:18px;}
+@media(min-width:760px){.grid-3{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr);}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.sec-alt .card{background:var(--bg);}
+.card-quote{font-size:20px;font-weight:800;color:var(--bara);margin:0 0 10px;line-height:1.3;letter-spacing:-0.01em;}
+.card p{font-size:16px;color:var(--muted);}
+.card h3{margin-bottom:10px;}
+
+.pilar{border-left:4px solid var(--pri-mid);padding:4px 0 4px 18px;margin-bottom:20px;}
+.pilar.p-anak{border-color:#7DB283;}
+.pilar.p-ortu{border-color:var(--madu);}
+.pilar.p-darurat{border-color:var(--bara);}
+.pilar h4{margin-bottom:4px;color:var(--pri);}
+.pilar p{font-size:16px;color:var(--muted);margin:0;}
+.pilar p b{color:var(--pri);}
+.golden{margin-top:28px;font-size:25px;font-weight:800;color:var(--pri);margin-bottom:6px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* steps */
+.step{display:grid;gap:20px;padding:28px 0;border-top:1px solid var(--line);}
+.narrow + .step{border-top:none;}
+@media(min-width:1024px){
+  .step.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .step-img{order:2;}
+}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--pri-mid);color:#fff;font-weight:800;font-size:16px;margin-bottom:12px;}
+.step-copy p{color:var(--muted);margin-top:10px;}
+.step-wide{display:block;}
+.step-wide .step-copy{max-width:var(--maxw-text);}
+
+/* screenshot frames */
+.shot{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 1px 3px rgba(30,91,71,.08);}
+.shot-r{max-width:300px;width:100%;margin-left:auto;margin-right:auto;}
+@media(min-width:1024px){.shot-r{max-width:100%;}}
+[data-zoom]{cursor:zoom-in;}
+.m-only{display:inline;}
+@media(min-width:700px){.m-only{display:none;}}
+figure{margin:0;}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;text-align:center;}
+
+/* feature rows */
+.feat{display:grid;gap:24px;padding:40px 0;border-top:1px solid var(--line);}
+@media(min-width:1024px){
+  .feat.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .feat.dimg.flip{grid-template-columns:1.45fr 1fr;}
+  .feat-img{order:2;}
+  .feat.flip .feat-img{order:1;}
+  .feat.flip .feat-copy{order:2;}
+}
+.feat-copy h3{margin-bottom:12px;}
+.feat-copy p{color:var(--muted);font-size:16.5px;}
+.feat-pair{padding-top:40px;border-top:1px solid var(--line);}
+
+/* alat */
+.alat-tabs{display:none;}
+.alat-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.alat-track::-webkit-scrollbar{display:none;}
+.alat-item{flex:0 0 80%;scroll-snap-align:center;}
+.alat-item h3{font-size:19px;margin:16px 0 6px;}
+.alat-item p{font-size:15.5px;color:var(--muted);margin:0;}
+.alat-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;}
+.alat-dots button,.testi-dots button{width:8px;height:8px;padding:0;border:none;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s ease,width .2s ease;}
+.alat-dots button.on,.testi-dots button.on{background:var(--pri-mid);width:22px;border-radius:5px;}
+.alat-dots button:focus-visible,.testi-dots button:focus-visible{outline:2px solid var(--pri-mid);outline-offset:3px;}
+@media(min-width:1024px){
+  .alat-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:26px;flex-wrap:wrap;}
+  .alat-tabs button{font:inherit;font-size:15.5px;font-weight:700;color:var(--pri);background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:10px 20px;cursor:pointer;}
+  .alat-tabs button[aria-selected="true"]{background:var(--pri-mid);border-color:var(--pri-mid);color:#fff;}
+  .alat-tabs button:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+  .alat-track{display:block;overflow:visible;padding:0;margin:0;}
+  .alat-item{display:none;}
+  .alat-item.on{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center;}
+  .alat-item h3{font-size:24px;margin:0 0 10px;}
+  .alat-item p{font-size:16.5px;}
+  .alat-dots{display:none;}
+}
+.also{max-width:var(--maxw-text);margin:34px auto 0;text-align:center;font-size:16px;color:var(--muted);}
+
+/* jelas */
+.clear-card p{color:var(--muted);font-size:16.5px;}
+.clear-yes{border-top:4px solid var(--pri-mid);}
+.clear-no{border-top:4px solid var(--madu);}
+
+.fitlist{list-style:none;padding:0;margin:0;}
+.fitlist li{position:relative;padding-left:30px;margin-bottom:13px;font-size:16.5px;}
+.fitlist li::before{position:absolute;left:0;top:0;font-weight:800;font-size:17px;}
+.fit-yes li::before{content:"✓";color:var(--pri-mid);}
+.fit-no li::before{content:"✕";color:var(--bara);}
+
+/* table */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15.5px;background:var(--card);}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none;}
+thead th{font-size:13.5px;font-weight:700;color:var(--muted);border-bottom:2px solid var(--line);}
+thead th.hl{color:var(--pri);}
+tbody td.hl{font-weight:700;color:var(--pri);background:var(--pri-soft);}
+tbody th{font-weight:600;color:var(--ink);width:19%;}
+
+/* testimoni */
+.testi-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.testi-grid::-webkit-scrollbar{display:none;}
+.testi-grid img{flex:0 0 78%;scroll-snap-align:center;width:100%;height:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 1px 3px rgba(30,91,71,.08);}
+.testi-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;}
+@media(min-width:700px){
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;overflow:visible;padding:0;margin:0;}
+  .testi-grid img{flex:none;}
+  .testi-dots{display:none;}
+}
+
+/* nilai (naratif) */
+.story{max-width:var(--maxw-text);margin:0 auto 34px;}
+.story p{font-size:clamp(17px,2vw,18.5px);color:var(--muted);}
+.story p.punch{font-size:clamp(19px,2.4vw,22px);font-weight:700;color:var(--pri);line-height:1.45;margin-top:22px;}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px 22px;max-width:620px;margin:0 auto;}
+.sec-alt .price-card{background:var(--bg);}
+@media(min-width:640px){.price-card{padding:36px;}}
+.incl{list-style:none;padding:0;margin:18px 0 0;}
+.incl li{position:relative;padding:10px 0 10px 30px;border-bottom:1px solid var(--line-soft);font-size:16px;}
+.incl li:last-child{border-bottom:none;}
+.incl li::before{content:"✓";position:absolute;left:0;top:10px;font-weight:800;color:var(--pri-mid);}
+.once-box{text-align:center;background:var(--madu-soft);border-radius:var(--radius);padding:18px 20px;margin:24px 0 0;font-size:16.5px;color:var(--ink);}
+.once-box b{display:block;font-size:19px;color:var(--pri);margin-bottom:2px;}
+
+.flow{max-width:620px;margin:40px auto 0;}
+.flow h3{text-align:center;margin-bottom:18px;font-size:clamp(19px,2.4vw,22px);}
+.flow ol{list-style:none;padding:0;margin:0;counter-reset:f;}
+.flow li{counter-increment:f;position:relative;padding:0 0 18px 48px;font-size:16px;color:var(--muted);}
+.flow li:last-child{padding-bottom:0;}
+.flow li::before{content:counter(f);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--pri-soft);color:var(--pri);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.flow li b{display:block;color:var(--pri);font-size:16.5px;}
+
+/* faq */
+.faq-key{background:var(--card);border:3px solid var(--madu);border-radius:var(--radius);padding:22px;margin-bottom:16px;}
+.faq-key h3{font-size:clamp(20px,3.2vw,23px);margin-bottom:12px;}
+.faq-key p{font-size:17.5px;color:var(--muted);margin:0 0 10px;}
+.faq-key ol{margin:0;padding:0 0 0 24px;font-size:clamp(17.5px,2.6vw,19px);line-height:1.5;}
+.faq-key li{margin-bottom:10px;padding-left:4px;}
+.faq-key li:last-child{margin-bottom:0;}
+.faq-key li::marker{font-weight:800;color:var(--madu-text);}
+.faq-key b{color:var(--pri);}
+.faq{border-top:1px solid var(--line);margin-top:30px;}
+.faq details{border-bottom:1px solid var(--line);}
+.faq summary{cursor:pointer;padding:18px 34px 18px 0;position:relative;font-weight:700;font-size:16.5px;color:var(--pri);list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"";position:absolute;right:6px;top:26px;width:9px;height:9px;border-right:2.5px solid var(--pri-mid);border-bottom:2.5px solid var(--pri-mid);transform:rotate(45deg);transition:transform .18s ease;}
+.faq details[open] summary::after{transform:rotate(-135deg);top:28px;}
+.faq summary:focus-visible{outline:2px solid var(--pri-mid);outline-offset:2px;}
+.faq .ans{padding:0 0 20px;color:var(--muted);font-size:16.5px;}
+
+.closing-line{font-size:25px;font-weight:800;color:#fff;margin-top:24px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* sticky bar */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;box-shadow:0 -3px 14px rgba(30,91,71,.12);display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s ease;}
+.sticky-cta.on{transform:translateY(0);}
+.sticky-cta .sp{flex:1;min-width:0;}
+.sticky-cta .sp b{display:block;font-size:16.5px;color:var(--pri);line-height:1.2;}
+.sticky-cta .sp small{font-size:12.5px;color:var(--muted);}
+.sticky-cta .btn{width:auto;padding:14px 22px;font-size:15.5px;flex-shrink:0;}
+@media(min-width:900px){.sticky-cta{display:none;}}
+body.has-sticky{padding-bottom:82px;}
+@media(min-width:900px){body.has-sticky{padding-bottom:0;}}
+
+/* footer */
+.site-foot{background:var(--card);border-top:1px solid var(--line);padding:30px 0;text-align:center;}
+.site-foot .logo{display:block;margin-bottom:6px;}
+.site-foot small{font-size:13.5px;color:var(--muted-light);}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,32,25,.92);display:none;align-items:center;justify-content:center;padding:56px 12px 20px;}
+.lb.on{display:flex;}
+.lb-inner{max-width:1400px;width:100%;max-height:100%;overflow:auto;-webkit-overflow-scrolling:touch;border-radius:10px;}
+.lb img{width:auto;max-width:100%;max-height:86vh;margin:0 auto;border-radius:10px;}
+.lb-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;background:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.lb-close:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+.lb-close svg{width:18px;height:18px;}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+.pilar.pl-baca{border-color:#E8A33D;}
+.pilar.pl-ubah{border-color:#1E5B47;}
+.pilar.pl-hitung{border-color:#C8463D;}
+.eyebrow-arena{color:#1E5B47;}
+.eyebrow-harian{color:#A8701A;}
+.eyebrow-dompet{color:#2E8B57;}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Insting Pengusaha, halaman utama">Insting <em>Pengusaha</em></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-hd">
+        <h1>Kamu bukan gak bakat bisnis. Kamu cuma belum pernah latihan.</h1>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-mockup.webp" alt="Insting Pengusaha: latih insting bisnismu sebelum uangmu jadi taruhan. Simulasi bisnis, asah keputusan, tanpa risiko modal" width="1122" height="1402" fetchpriority="high">
+      </div>
+      <div class="hero-rest">
+        <p class="lead">Insting Pengusaha adalah simulator keputusan bisnis di HP kamu. Kamu jadi bos di 40 kasus usaha kecil: warung, lapak musiman, kebun, jasa rumahan, toko online, sampai usaha keluarga. Ambil keputusan, lalu lihat akibatnya ke kas, pelanggan, dan reputasi. Semuanya pakai uang simulasi, jadi gagal 40 kali pun uang aslimu gak berkurang sepeser.</p>
+        <ul class="hero-bullets">
+          <li><b>Takut rugi kalau salah langkah?</b> Kamu pegang Rp10.000.000 uang simulasi. Bangkrut di sini cuma jadi catatan belajar.</li>
+          <li><b>Gak tahu mau mulai dari mana?</b> Bedah Peluang mengubah barang yang ada di sekitarmu jadi 2 sampai 3 bentuk jualan yang paling cocok.</li>
+          <li><b>Gak jago hitung?</b> Hitung Cepat menunjukkan untung kotor dan balik modal sebelum kamu keluar uang.</li>
+        </ul>
+        <div class="cta-block">
+          <a class="btn" href="checkout.html">Main 1 Kasus Pertama →</a>
+          <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+        </div>
+        <div class="hero-facts">
+          <span>40 kasus bercabang</span>
+          <span>60 latihan harian</span>
+          <span>Rp0 rugi uang asli</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADEGAN -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:34px;">
+      <h2>Baca tiga ini. Kalau ada satu yang kejadian minggu ini, kamu di tempat yang benar.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <p class="card-quote">“Lapak sebelah banting harga, aku ikut turunin.”</p>
+        <p>Harga turun, untung tipis, capeknya sama. Seminggu kemudian dua-duanya rugi, dan pembelinya tetap segitu-segitu aja. Kamu gak kepikiran cara lain selain ikut murah.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Pesangon ada, idenya yang gak ada.”</p>
+        <p>Tiap malam buka video ide usaha modal kecil. Besok paginya masih bingung mau pilih yang mana, dan takut uang yang cuma segini habis di usaha yang salah.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Kemarin udah hampir belanja stok 200 biji.”</p>
+        <p>Pas ditanya laku berapa sehari dan kapan balik modal, jawabannya cuma “ya pasti laku lah”. Uangnya sudah siap ditransfer, hitungannya belum ada.</p>
+      </div>
+    </div>
+    <p class="narrow lead center" style="margin-top:30px;">Tiga adegan ini kelihatan beda. Akarnya sama, dan bukan karena kamu malas atau kurang modal.</p>
+  </div>
+</section>
+
+<!-- MEKANISME -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow">
+      <h2>Pengusaha yang kamu kagumi gak lahir dengan insting. Mereka latihan, cuma bayarnya pakai uang sungguhan.</h2>
+      <p style="margin-top:18px;">Selama ini satu-satunya tempat latihan bisnis adalah usahamu sendiri. Salah sekali bisa makan tabungan bertahun-tahun. Karena takut salah, banyak orang akhirnya gak pernah mulai, atau mulai lalu mengulang kesalahan yang sama.</p>
+      <p>Insting Pengusaha melatih <b>Latihan Insting 3 Gerak</b>, pola yang sama yang dipakai pengusaha kecil yang jeli melihat peluang:</p>
+
+      <div style="margin-top:26px;">
+        <div class="pilar pl-baca"><h4>Baca Orang</h4><p>Apa yang sebenarnya dibayar pembeli. Barangnya, fotonya, momennya, atau kepraktisannya.</p></div>
+        <div class="pilar pl-ubah"><h4>Ubah Bentuk Jualan</h4><p>Barang yang sama bisa dijual, disewakan, didepositkan, dilanggankan, atau dijadikan pengalaman.</p></div>
+        <div class="pilar pl-hitung"><h4>Hitung Cepat</h4><p>Angkanya masuk akal atau gak, sebelum modal keluar dari kantong.</p></div>
+      </div>
+
+      <p style="margin-top:26px;">Setiap kasus menaruh kamu di kursi pemilik usaha. Kamu ambil tiga keputusan berurutan, dan setiap pilihan membuka jalan cerita yang berbeda. Di akhir kasus, kamu bisa membuka jalan yang dipilih pengusahanya dan pelajaran intinya.</p>
+
+      <p class="golden">Targetnya bukan menghafal ide usaha. Targetnya terbiasa mengambil keputusan yang bisa kamu pertanggungjawabkan.</p>
+      <p style="color:var(--muted);">Aturan yang dijaga app: kamu harus memilih dulu, baru lihat akibatnya. Gak ada lompat ke kunci jawaban, jadi yang terlatih benar-benar caramu berpikir.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARA KERJA -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:10px;">
+      <h2>Kamu gak perlu ngerti teori bisnis dulu. App-nya yang nuntun.</h2>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">1</div>
+        <h3>Masukkan kode akses</h3>
+        <p>Kodenya ada di Panduan Akses di emailmu. Cukup sekali, langsung masuk tanpa daftar.</p>
+      </div>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">2</div>
+        <h3>Baca 3 kartu singkat, lalu main kasus pertama</h3>
+        <p>Kamu jadi bosnya, gagal itu gratis, dan 3 gerak yang dilatih. Setelah itu langsung masuk kasus pembuka: Laundry Kiloan Kalah Harga.</p>
+      </div>
+    </div>
+
+    <div class="step dimg">
+      <div class="step-copy">
+        <div class="step-num">3</div>
+        <h3>Lihat hasilnya, lalu bandingkan dengan jalan aslinya</h3>
+        <p>Hasil kasusmu muncul dari Untung besar sampai Bangkrut, lengkap dengan bintang dan perubahan Dompet. Buka jalan yang dipilih pengusaha aslinya, baca pelajaran intinya, lalu tulis satu kalimat “Kalau ini usahaku, aku akan...”.</p>
+      </div>
+      <div class="step-img">
+        <picture><source media="(min-width:1024px)" srcset="img/hasil-kasus-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/hasil-kasus.webp" alt="Layar akhir kasus Cuci Motor Sepi di Hari Kerja: Untung besar tiga bintang, Dompet simulasi menerima Rp2.320.000, tombol Lihat jalan yang dipilih pengusaha aslinya, dan pelajaran inti" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="cta-block narrow center" style="margin-top:34px;">
+      <a class="btn" href="checkout.html">Main 1 Kasus Pertama →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FITUR -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Yang kamu pakai tiap hari</h2>
+    </div>
+
+    <div class="feat dimg" style="border-top:none;">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-arena">Arena Kasus</p>
+        <h3>Jam istirahat, satu kasus, tiga keputusan.</h3>
+        <p style="margin-top:12px;">Pilih usaha dari 6 kategori, baca situasinya, lalu jawab: “Kamu bosnya. Apa keputusanmu?” Setiap pilihan langsung menggerakkan Kas, Pelanggan, Reputasi, dan Waktu, dan menentukan cabang cerita berikutnya.</p>
+        <p>Ada kasus pistol air di pantai, sewa buket wisuda, petik jeruk di kebun, sampai laundry yang kalah harga. Mau coba jalan lain? Ulangi kasusnya dan kejar tiga bintang.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/keputusan-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/keputusan.webp" alt="Layar keputusan kasus Cuci Motor Sepi di Hari Kerja: indikator Kas, Pelanggan, Reputasi, Waktu, pertanyaan siapa yang motornya kotor setiap hari, dan tiga pilihan jawaban" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg flip">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-harian">Latihan Harian</p>
+        <h3>Sambil nunggu antrean, satu keputusan beres.</h3>
+        <p style="margin-top:12px;">Satu kasus mini per hari, satu keputusan, kurang dari 5 menit. Jawabannya langsung dijelaskan, termasuk hitungannya. Ada 60 kasus mini yang gak berulang sampai semuanya kamu lewati.</p>
+        <p>Streak harianmu dicatat, dengan lencana dari Pedagang Pemula, Penjaga Lapak, Juragan Kecil, Juragan, sampai Saudagar.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/harian-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/harian.webp" alt="Layar Latihan hari ini dengan streak 13 hari: soal balik modal rak Rp1.200.000, jawaban 30 hari benar, dan penjelasan hitungannya" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-dompet">Dompet Simulasi</p>
+        <h3>Saldo naik turun, uang aslimu diam di tempat.</h3>
+        <p style="margin-top:12px;">Kamu mulai dengan Rp10.000.000 uang simulasi. Modal kasus diambil dari sini, hasilnya kembali ke sini. Butuh tambahan? Ambil pinjaman 2, 5, atau 10 juta, dan rasakan bunganya ikut memotong hasil kasus berikutnya.</p>
+        <p>Bangkrut? Mulai lagi dari nol. App mencatat berapa kali kamu gagal dengan bangga: “Rugi uang asli: Rp0.” Grafik kasnya menunjukkan kemajuanmu dari angka, bukan dari perasaan.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/dompet-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/dompet.webp" alt="Layar Dompet Simulasi: saldo Rp19.508.334, kali gagal 3 dengan catatan rugi uang asli Rp0, grafik kas, tombol Ambil pinjaman dan Mulai lagi dari nol" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat-pair">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Rencana usahamu urusanmu.</h3>
+          <p>Tanpa akun dan password. Progres, catatan jurnal, dan barang yang kamu ketik di Bedah Peluang tersimpan di perangkatmu sendiri. Ganti HP? Pindahkan progres dengan satu kode.</p>
+        </div>
+        <div class="card">
+          <h3>HP atau laptop, dua-duanya nyaman.</h3>
+          <p>Dibuka dari browser. Di laptop, layar kasus tampil dua kolom: cerita di kiri, indikator dan grafik kas di kanan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALAT -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:30px;">
+      <h2>Dan alat untuk sebelum kamu keluar modal.</h2>
+      <p class="lead" style="margin-top:12px;">Bisa dipakai kapan saja untuk ide usahamu sendiri.<span class="m-only"> Geser untuk melihat yang lain.</span></p>
+    </div>
+
+    <div class="alat-tabs" role="tablist" aria-label="Pilih alat">
+      <button type="button" role="tab" id="tab-hitung" aria-controls="alat-hitung" aria-selected="true">Hitung Cepat</button>
+      <button type="button" role="tab" id="tab-bedah" aria-controls="alat-bedah" aria-selected="false" tabindex="-1">Bedah Peluang</button>
+      <button type="button" role="tab" id="tab-profil" aria-controls="alat-profil" aria-selected="false" tabindex="-1">Profil Insting</button>
+    </div>
+
+    <div class="alat-track" id="alatTrack">
+      <div class="alat-item on" id="alat-hitung" role="tabpanel" aria-labelledby="tab-hitung">
+        <picture><source media="(min-width:1024px)" srcset="img/hitung-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/hitung.webp" alt="Layar Hitung Cepat: pilihan model Jual Biasa, Deposit, Sewa, Tiket + Timbang, dengan isian modal per unit, harga jual, perkiraan laku per hari, dan biaya tetap" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Hitung Cepat</h3>
+          <p>Empat model: Jual Biasa, Deposit, Sewa, dan Tiket + Timbang. Isi angka kasarnya, keluar untung kotor, kapan balik modal, dan perbandingan berdampingan dengan jual biasa. Ada tombol isi dengan contoh kalau mau coba dulu.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-bedah" role="tabpanel" aria-labelledby="tab-bedah">
+        <picture><source media="(min-width:1024px)" srcset="img/bedah-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/bedah.webp" alt="Layar hasil Bedah Peluang untuk kebun kopi: bentuk jualan paling cocok Pengalaman 100 persen dan Sewa 56 persen, lengkap dengan alasan dan kasus serupa" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Bedah Peluang</h3>
+          <p>Ketik barang atau usaha yang kamu punya, misalnya kebun kopi, kamera, atau risol. Jawab 8 pertanyaan pilihan ganda, lalu app menyarankan bentuk jualan yang paling cocok dari 7 pilihan, beserta alasannya, kasus serupa di Arena, dan hitungan yang sudah terisi.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-profil" role="tabpanel" aria-labelledby="tab-profil">
+        <picture><source media="(min-width:1024px)" srcset="img/profil-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/profil.webp" alt="Layar Profil Insting: tipe insting Si Penjaga Pelanggan dan radar kemampuan Baca Orang, Ubah Bentuk, Hitung Cepat, Disiplin Kas, Pelanggan, Adaptasi, Negosiasi" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Profil Insting</h3>
+          <p>Terbuka setelah 3 kasus. Dibaca dari semua keputusanmu: tipe instingmu (Si Nekat, Si Hati Hati, Si Penghitung, Si Penjaga Pelanggan, dan lainnya), radar kemampuan, selera risikomu, dan 3 kasus untuk melatih sisi terlemah.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alat-dots" id="alatDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Alat 1"></button>
+      <button type="button" data-i="1" aria-label="Alat 2"></button>
+      <button type="button" data-i="2" aria-label="Alat 3"></button>
+    </div>
+
+    <p class="also">Juga ada Rapor &amp; Jurnal yang bisa dicetak (termasuk kesalahan yang paling sering kamu ulang), 3 Bonus Cetak (Kartu 7 Bentuk Jualan, Lembar Hitung Cepat Sebelum Keluar Modal, 30 Pertanyaan Baca Pembeli), lencana, dan Pindah Progres untuk ganti HP.</p>
+  </div>
+</section>
+
+<!-- SUPAYA JELAS -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Supaya jelas dari awal</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card clear-card clear-yes">
+        <h3>Insting Pengusaha bisa</h3>
+        <p>melatih cara berpikir sebelum mengambil keputusan usaha, membiasakan kamu menghitung sebelum keluar modal, mengasah cara melihat peluang dari barang di sekitarmu, dan menunjukkan pola keputusanmu sendiri lewat Profil Insting dan Rapor.</p>
+      </div>
+      <div class="card clear-card clear-no">
+        <h3>Insting Pengusaha bukan</h3>
+        <p>janji penghasilan, janji lunas utang, atau jaminan usaha pasti untung. Bukan kelas video, bukan mentor, dan bukan pengganti konsultan keuangan atau hukum. Angka di simulator adalah uang simulasi yang disederhanakan, bukan proyeksi bisnis. Kasusnya terinspirasi pola usaha nyata, dan tiga kasus yang berasal dari cerita iklan diberi label “Cerita ilustrasi”.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNTUK SIAPA -->
+<section>
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Cocok kalau</h3>
+        <ul class="fitlist fit-yes">
+          <li>Kamu pengen punya usaha sampingan, tapi takut rugi dan bingung mulai dari mana.</li>
+          <li>Usahamu jalan di tempat dan kamu terus ikut banting harga.</li>
+          <li>Kamu pernah gagal usaha dan gak mau mengulang kesalahan yang sama.</li>
+          <li>Kamu pegang pesangon, THR, atau tabungan dan mau latihan dulu sebelum memakainya.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Bukan untuk kamu kalau</h3>
+        <ul class="fitlist fit-no">
+          <li>Kamu cari cara cepat kaya. Ini latihan cara berpikir, bukan jalan pintas.</li>
+          <li>Kamu cuma butuh daftar ide usaha siap pakai.</li>
+          <li>Kamu gak mau meluangkan 10 menit sehari.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERBANDINGAN -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Kenapa app ini, bukan cara yang biasa dicoba.</h2>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Video motivasi bisnis</th>
+            <th>Buku ide usaha</th>
+            <th>Kelas bisnis online</th>
+            <th class="hl">Insting Pengusaha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Latihan mengambil keputusan</th><td>Cuma menonton</td><td>Cuma membaca daftar</td><td>Teori dan tugas</td><td class="hl">40 kasus bercabang, kamu yang memilih</td></tr>
+          <tr><th>Akibat keputusan terlihat</th><td>Gak ada</td><td>Gak ada</td><td>Tergantung mentor</td><td class="hl">Kas, pelanggan, reputasi bergerak tiap pilihan</td></tr>
+          <tr><th>Kasus yang dekat</th><td>Kisah sukses orang lain</td><td>Ide umum</td><td>Sering contoh bisnis besar</td><td class="hl">Warung, lapak, kebun, jasa rumahan</td></tr>
+          <tr><th>Kalau salah</th><td>Gak tahu salahnya di mana</td><td>Baru ketahuan setelah modal keluar</td><td>Baru ketahuan setelah modal keluar</td><td class="hl">Rugi uang asli Rp0, bisa diulang</td></tr>
+          <tr><th>Biaya</th><td>Gratis</td><td>Rp50 ribu sampai Rp100 ribuan</td><td>Rp99 ribu per bulan sampai Rp1,2 juta</td><td class="hl">Sekali bayar, tanpa langganan</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Cerita dari yang sudah pakai.</h2>
+      <p class="lead" style="margin-top:12px;"><span class="m-only">Geser untuk melihat cerita lainnya. </span>Nomor disensor untuk menjaga privasi.</p>
+    </div>
+    <div class="testi-grid">
+      <img src="img/testi1.webp" alt="Screenshot WhatsApp: setelah ditanya kapan biasanya butuh risol, ternyata pembeli pesan pas ada acara, akhirnya buka pesanan minimal satu box dan masuk 3 pesanan dari grup wali murid" width="374" height="782" loading="lazy">
+      <img src="img/testi2.webp" alt="Screenshot WhatsApp: di simulasi memilih jalan lain dan untung, dapat lencana Bangkit, membaca jalan pengusaha aslinya, lalu mau coba lagi kolam bekas dengan dihitung dulu" width="374" height="782" loading="lazy">
+      <img src="img/testi3.webp" alt="Screenshot WhatsApp: tipe insting Si Nekat bikin menahan pesanan 200 gelas, menghitung dulu pakai kalkulator, akhirnya pesan 50 dulu" width="374" height="782" loading="lazy">
+    </div>
+    <div class="testi-dots" id="testiDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Testimoni 1"></button>
+      <button type="button" data-i="1" aria-label="Testimoni 2"></button>
+      <button type="button" data-i="2" aria-label="Testimoni 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- NILAI (NARATIF, TANPA HARGA) -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:24px;">
+      <h2>Berapa yang sudah keluar selama ini?</h2>
+    </div>
+    <div class="story">
+      <p>Coba ingat apa saja yang sudah keluar karena keputusan diambil pakai feeling. Stok yang gak laku. Lapak yang tutup setelah tiga bulan. Diskon yang ternyata bikin tekor. Uang yang habis karena “kayaknya bakal rame”. Satu keputusan usaha yang salah bisa makan jutaan rupiah, kadang tabungan bertahun-tahun.</p>
+      <p>Kelas bisnis online biasanya dibayar bulanan, dan materinya teori. Simulator bisnis dari luar negeri berbahasa Inggris, kasusnya perusahaan raksasa, dan dibayar langganan tiap bulan.</p>
+      <p class="punch">Insting Pengusaha sekali bayar, tanpa langganan, dan harganya jauh di bawah satu kali salah belanja stok. Angkanya ada di halaman berikutnya.</p>
+    </div>
+
+    <div class="price-card">
+      <h3 class="center">Yang kamu dapat begitu masuk</h3>
+      <ul class="incl">
+        <li>Arena Kasus: 40 kasus bercabang di 6 kategori usaha</li>
+        <li>Dompet Simulasi Rp10.000.000 dengan pinjaman, bunga, dan grafik kas</li>
+        <li>Latihan Harian: 60 kasus mini, streak, dan lencana</li>
+        <li>Kalkulator Hitung Cepat 4 model</li>
+        <li>Bedah Peluang dengan 7 Bentuk Jualan</li>
+        <li>Profil Insting: tipe insting dan radar kemampuan</li>
+        <li>Rapor &amp; Jurnal Keputusan yang bisa dicetak</li>
+        <li>3 Bonus Cetak: Kartu 7 Bentuk Jualan, Lembar Hitung Cepat, 30 Pertanyaan Baca Pembeli</li>
+        <li>Pindah Progres untuk ganti HP</li>
+      </ul>
+      <div class="once-box">
+        <b>Sekali bayar, tanpa langganan.</b>
+        Semua fitur langsung terbuka, tanpa paket basic dan premium.
+      </div>
+      <div class="cta-block center">
+        <a class="btn" href="checkout.html">Main 1 Kasus Pertama →</a>
+        <p class="btn-note">Panduan Akses berisi kode masuk dikirim ke email yang kamu pakai saat order.</p>
+      </div>
+    </div>
+
+    <div class="flow">
+      <h3>Dari bayar sampai kasus pertama, tiga langkah.</h3>
+      <ol>
+        <li><b>Selesaikan pembayaran</b>Bisa pakai QRIS, transfer bank, atau e-wallet.</li>
+        <li><b>Buka email, klik link biru</b>Klik link biru yang diawali drive.google.com, bukan tombol “Unduh Produk”. Kalau belum ada di kotak masuk, cek folder Spam atau Promosi.</li>
+        <li><b>Masukkan kode, lalu main kasus pertama</b>Buka ip-kit.netlify.app, masukkan kode, baca 3 kartu sambutan, lalu ambil keputusan pertamamu.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <h2 class="center" style="margin-bottom:26px;">Pertanyaan yang sering masuk</h2>
+
+      <div class="faq-key">
+        <h3>Aku sudah bayar. Kodenya di mana?</h3>
+        <ol>
+          <li>Buka email pembelianmu.</li>
+          <li>Klik <b>link biru yang diawali drive.google.com</b>.</li>
+          <li>PDF Panduan Akses terbuka. Kodenya ada di dalamnya.</li>
+        </ol>
+      </div>
+
+      <div class="faq-key">
+        <h3>Aku sudah klik &quot;Unduh Produk&quot;, tapi gak ada kodenya.</h3>
+        <p>Gak apa-apa, kamu cuma salah klik. Balik ke email yang sama, lalu:</p>
+        <ol>
+          <li>Cari <b>link biru yang diawali drive.google.com</b>. Letaknya di atas tombol Unduh Produk.</li>
+          <li>Klik link itu, bukan tombolnya.</li>
+          <li>Kodenya ada di PDF Panduan Akses yang terbuka.</li>
+        </ol>
+      </div>
+
+      <div class="faq">
+        <details><summary>Kodenya ditolak.</summary><div class="ans">Pastikan kamu membuka ip-kit.netlify.app, lalu ketik atau salin kode dari Panduan Akses apa adanya. Huruf besar kecil dan spasi yang ikut tersalin gak masalah. Masih ditolak? Balas email pembelianmu.</div></details>
+        <details><summary>Harganya berapa?</summary><div class="ans">Harganya tertera di halaman pembayaran setelah kamu klik tombol Mulai. Sekali bayar, tanpa biaya bulanan, dan semua fitur langsung terbuka.</div></details>
+        <details><summary>Ini app yang harus di-install?</summary><div class="ans">Gak. Insting Pengusaha dibuka lewat browser di HP atau laptop. Supaya cepat dibuka, simpan ke layar utama HP seperti app biasa.</div></details>
+        <details><summary>Perlu bikin akun atau password?</summary><div class="ans">Gak. Cukup satu kode akses.</div></details>
+        <details><summary>Data dan ide usahaku aman?</summary><div class="ans">Progres, catatan jurnal, dan barang yang kamu ketik di Bedah Peluang tersimpan di perangkatmu, bukan di server kami.</div></details>
+        <details><summary>Kalau ganti HP, progresnya ikut?</summary><div class="ans">Bisa. Buka Pindah Progres di menu Profil dan salin kodenya. Di HP baru, masukkan kode akses yang sama, lalu tempel kode Pindah Progres tadi.</div></details>
+        <details><summary>Uangnya beneran?</summary><div class="ans">Bukan. Semua angka di Dompet dan kasus adalah uang simulasi. Mau bangkrut berkali-kali pun, uang aslimu gak ikut bergerak.</div></details>
+        <details><summary>Aku belum punya usaha sama sekali. Cocok?</summary><div class="ans">Cocok. Kasusnya ditulis untuk pemula, dimulai dari tingkat Pemula. Bedah Peluang bisa dipakai untuk barang apa saja yang ada di sekitarmu.</div></details>
+        <details><summary>Apa ini jaminan usahaku sukses?</summary><div class="ans">Bukan. Insting Pengusaha melatih cara berpikir dan mengambil keputusan. Hasil usaha di dunia nyata tetap bergantung pada banyak hal di luar app.</div></details>
+        <details><summary>Kasusnya kisah nyata?</summary><div class="ans">Kasusnya terinspirasi pola usaha nyata di Indonesia. Tiga kasus yang berasal dari cerita iklan diberi label “Cerita ilustrasi” di dalam app.</div></details>
+        <details><summary>Berapa lama sehari?</summary><div class="ans">Sekitar 10 sampai 15 menit. Latihan harian kurang dari 5 menit.</div></details>
+        <details><summary>Kalau berhenti di tengah kasus?</summary><div class="ans">Gak masalah. Modal kasus dikembalikan ke Dompet, dan kamu bisa mulai kasus itu lagi dari awal kapan saja.</div></details>
+        <details><summary>Setelah 40 kasus selesai, terus gimana?</summary><div class="ans">Kasus bisa diulang untuk mencoba jalan lain dan mengejar tiga bintang. Latihan harian, Hitung Cepat, dan Bedah Peluang tetap bisa dipakai untuk ide usahamu sendiri.</div></details>
+        <details><summary>Ada biaya bulanan?</summary><div class="ans">Gak ada. Sekali bayar.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="sec-deep">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Hari ini cukup mulai dari satu keputusan.</h2>
+      <p class="lead" style="margin-top:20px;">Kamu mungkin sudah nonton video motivasi, baca daftar ide usaha, dan ikut-ikutan jualan yang lagi ramai. Satu hal yang belum: latihan mengambil keputusan dan melihat akibatnya, sebelum uangmu yang jadi taruhan.</p>
+      <p class="closing-line">Insting bisnis itu bukan bakat. Bisa dilatih.</p>
+      <div class="cta-block">
+        <a class="btn" href="checkout.html">Main 1 Kasus Pertama →</a>
+        <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="logo" href="index.html">Insting <em>Pengusaha</em></a>
+    <small>© 2026 Insting Pengusaha. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="sp">
+    <b>Simulator keputusan bisnis</b>
+    <small>Buka dari HP, tanpa install</small>
+  </div>
+  <a class="btn" href="checkout.html">Mulai</a>
+</div>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan app diperbesar">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Tutup gambar">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" stroke="#1F2A24" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="lb-inner"><img id="lbImg" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('stickyCta');
+  var hero=document.querySelector('.hero');
+  if(!bar||!hero)return;
+  document.body.classList.add('has-sticky');
+  function check(){bar.classList.toggle('on',hero.getBoundingClientRect().bottom<0);}
+  check();
+  window.addEventListener('scroll',check,{passive:true});
+  window.addEventListener('resize',check);
+})();
+
+/* geser + titik untuk testimoni dan alat (HP) */
+function scroller(trackSel,itemSel,dotsId){
+  var track=document.querySelector(trackSel),dots=document.getElementById(dotsId);
+  if(!track||!dots)return;
+  var slides=track.querySelectorAll(itemSel),btns=dots.querySelectorAll('button');
+  function active(){
+    var mid=track.scrollLeft+track.clientWidth/2,best=0,min=Infinity;
+    for(var i=0;i<slides.length;i++){
+      var c=slides[i].offsetLeft+slides[i].offsetWidth/2,d=Math.abs(c-mid);
+      if(d<min){min=d;best=i;}
+    }
+    for(var j=0;j<btns.length;j++)btns[j].classList.toggle('on',j===best);
+  }
+  var t;
+  track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(active,60);},{passive:true});
+  for(var k=0;k<btns.length;k++){
+    btns[k].addEventListener('click',function(){
+      var el=slides[Number(this.getAttribute('data-i'))];
+      if(!el)return;
+      track.scrollTo({left:el.offsetLeft-(track.clientWidth-el.offsetWidth)/2,behavior:'smooth'});
+    });
+  }
+  active();
+}
+scroller('.testi-grid','img','testiDots');
+scroller('#alatTrack','.alat-item','alatDots');
+
+/* tab alat (desktop) */
+(function(){
+  var tabs=document.querySelectorAll('.alat-tabs [role="tab"]');
+  function pick(tab){
+    for(var i=0;i<tabs.length;i++){
+      var on=tabs[i]===tab;
+      tabs[i].setAttribute('aria-selected',on?'true':'false');
+      tabs[i].setAttribute('tabindex',on?'0':'-1');
+      document.getElementById(tabs[i].getAttribute('aria-controls')).classList.toggle('on',on);
+    }
+  }
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click',function(){pick(this);});
+    tabs[i].addEventListener('keydown',function(e){
+      var idx=Array.prototype.indexOf.call(tabs,this),n=null;
+      if(e.key==='ArrowRight')n=tabs[(idx+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(idx-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();pick(n);n.focus();}
+    });
+  }
+})();
+
+/* lightbox: membuka versi gambar yang sedang tampil (HP atau desktop) */
+(function(){
+  var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),close=document.getElementById('lbClose');
+  var last=null;
+  function open(src,alt){
+    img.src=src;img.alt=alt||'';
+    lb.classList.add('on');document.body.style.overflow='hidden';close.focus();
+  }
+  function shut(){lb.classList.remove('on');img.removeAttribute('src');document.body.style.overflow='';if(last)last.focus();}
+  var zs=document.querySelectorAll('[data-zoom]');
+  for(var i=0;i<zs.length;i++){
+    zs[i].setAttribute('tabindex','0');
+    zs[i].setAttribute('role','button');
+    zs[i].addEventListener('click',function(){last=this;open(this.currentSrc||this.src,this.alt);});
+    zs[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});
+  }
+  close.addEventListener('click',shut);
+  lb.addEventListener('click',function(e){if(e.target===lb)shut();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))shut();});
+})();
+</script>
+</body>
+</html>
